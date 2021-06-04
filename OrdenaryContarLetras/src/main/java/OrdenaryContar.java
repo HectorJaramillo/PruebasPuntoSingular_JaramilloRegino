@@ -20,12 +20,12 @@ public class OrdenaryContar {
                 dic.replace(carac[i], dic.get(carac[i]) + 1);
             }
             else
-            {
+            {           //Si no existe, lo crea y se le asigna el valor 1 por ser la primera vez
             dic.put(carac[i], 1);
             }            
         }
         System.out.println(dic);
-        Arrays.sort(carac);
+        Arrays.sort(carac); //Ordeno alfabeticamente
         String s= new String(carac);
         System.out.println(s);
     }
